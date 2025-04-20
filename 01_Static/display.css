@@ -1,0 +1,6 @@
+.testgrid {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  place-items: center;
+  background-color: blue;
+}/*# sourceMappingURL=display.css.map */
