@@ -1,4 +1,4 @@
-@use './TemplatesStruct' as *;
+// @use './TemplatesStruct' as *;
 .l-section {
    @extend%flex-row, %Margin_container;
     flex-shrink: 0;
@@ -8,7 +8,7 @@
 }
 
 .mid-section {
-    @extend%Main_Align, %flex-row, %Margin_container;
+    @extend%Main_Align-Center, %flex-row, %Margin_container;
     background-color: $bgColor3;
 
     button.search{

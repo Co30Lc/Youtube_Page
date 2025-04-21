@@ -1,7 +1,8 @@
 $container: solid 2px black; 
 $bgColor1 : rgb(0, 174, 218);
-$bgColor2: rgb(165, 0, 194);
+$bgColor2: rgb(217, 0, 255);
 $bgColor3: rgb(230, 103, 5);
+$square-shape: 30px;
 
 %Default{
     font-family: Arial, Helvetica, sans-serif;
@@ -25,11 +26,19 @@ $bgColor3: rgb(230, 103, 5);
     flex: 1;
 }
 
-%Main_Align{
+%main-align-center{
     justify-content: center;
     align-items:center;
 }
 
-%Margin_container{
-    margin: 10px 20px;
+%align-head{
+    justify-content: space-between;
+    align-items: center;
+}
+
+%margin_cont{
+    margin: 10px 30px;
+}
+%iconDisplay{
+    height: $square-shape;
 }

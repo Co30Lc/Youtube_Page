@@ -1,73 +1,62 @@
-$container: solid 1px black; 
-$bgColor1 : rgb(0, 174, 218);
-$bgColor2: rgb(165, 0, 194);
-$bgColor3: rgb(5, 230, 148);
+@use './TemplatesStruct' as *;
 $icon-height: 20px;
 
-%flexCol {
-    display: flex;
-    flex:1;
-    flex-direction: column;
-    flex-shrink: 0;
-}
-%flexRow {
-    display: flex;
-    flex:1;
-    flex-shrink: 0;
-}
-%grid3section{
-    display: grid;
-    grid-template-columns: 50px 1fr 500px;
-}
-%grid1{
-    display: grid;
-    grid-template-columns: 1fr 2fr ;
-    
-
-}
-%flexCenter{
-    justify-content: center;
-    align-items: center;
-} 
-
 .left-section{
-    @extend%grid1;
-    align-items: center; 
-    margin: 10px; 
+    @extend%flex-row, %margin_cont;
+    flex: 0;
+    flex-shrink: 0;
+    width: 500px;
+    background-color: $bgColor1;
     .ham-icon{
-        width: 40px;
+        width: 25px;
+        background-color: $bgColor2;
     }
+    .youtube-icon{
+        width: 100px;
+        margin: 0 5px
+    }
+
 }
 .middle-section{
-    @extend%flexRow;
-    @extend%flexCenter;
-    // background-color:$bgColor1;
-    margin: 10px;
-    button.search-button{
-        .button-logo{
-        height: $icon-height;
-        padding: 5px;
-        }
-    }
+    @extend%flex-row, %main-align-center;
+    // $bgColor2;
+    padding: 0px 40px;
     .bar-search{
-        @extend%flexRow;
-        flex-shrink: 0;
-        font-size: 20px;
-        height: 55%;
-        padding: 0 10px;
-        margin-left:100px;
+        @extend%flex-row;
+        width: 0;
+        height: 35px;
+        border-radius: 2px;
+        border: solid .5px rgb(198, 198, 198);
+        padding: 0px 10px;
+        font-size: 15px;
+    }
+    .button-logo{
+        width: 29px;
+        margin: 0px 15px;
     }
 
-    .voice-icon{
-        height: $icon-height;
+    .voice-button{
+        width:40px;
+        height: 40px;
+        margin: 0px 10px;
+        //background-color: rgba(236, 235, 235, 0.768);
         border-radius: 50%;
-        background-color: rgb(236, 236, 236);
-        padding: 10px;
-        margin: 0px 20px;
+        border: solid .5px rgba(236, 235, 235, 0.768);
     }
-   
 }
 .right-section{
-    @extend%flexRow;
-    // background-color:$bgColor2;
+    @extend%align-head, %flex-row;
+    flex-shrink: 0;
+    flex: none;
+    width: 200px;
+    margin: 0 20px;
+    //background-color: $bgColor1;
+   .icon{
+        @extend%iconDisplay;
+    }
+    #profil{
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
 }
