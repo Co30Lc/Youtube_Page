@@ -14,21 +14,45 @@ body {
 .cont-sidebar {
   display: flex;
   flex-direction: column;
+  flex: 1;
+}
+
+.cont-testHeader {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.cont-testHeader {
+  justify-content: center;
+  align-items: center;
 }
 
 body {
-  padding: 70px 60px;
-  padding-right: 0px;
+  padding: 70px 0px;
+  padding-right: 0;
   height: 1000px;
+  margin: 10px 0;
+}
+
+hr {
+  margin: 0;
+  padding: 0px;
 }
 
 .cont-header {
   position: fixed;
   inset: 0 0 0 0;
   height: 80px;
-  background-color: rgb(230, 103, 5);
+  background-color: rgb(247, 247, 247);
 }
 
 .cont-display {
   color: white;
+}
+
+.cont-testHeader {
+  background-color: aqua;
+  justify-content: space-between;
+  border: solid 2px black;
 }/*# sourceMappingURL=index.css.map */

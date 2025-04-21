@@ -1,42 +1,22 @@
-$container: solid 1px black; 
-$bgColor1 : rgb(0, 174, 218);
-$bgColor2: rgb(165, 0, 194);
-$bgColor3: rgb(230, 103, 5);
-
-%Default{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    padding: 10px;
-    margin: 10px;
-}
-%grid3section{
-    display: grid;
-    grid-template-columns: 200px 1fr 200px;
-    gap: 10px 20px;
-}
-%flex-col{
-    display: flex;
-    flex-direction: column;
-}
-%flex-row{
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    justify-content: space-between
-}
+@use './TemplatesStruct' as *;
 
 body{
     @extend%Default;
-    padding: 70px 60px;
-    padding-right: 0px;
+    padding: 70px 0px;
+    padding-right: 0;
     height: 1000px;
+    margin: 10px 0;
+}
+hr{
+    margin: 0;
+    padding: 0px;
 }
 .cont-header {
     @extend%grid3section;
     position: fixed;
     inset: 0 0 0 0;
     height: 80px;
-    background-color: $bgColor3;
+    background-color:rgb(247, 247, 247);
 }
 .cont-sidebar{
     @extend%flex-col;
@@ -44,4 +24,12 @@ body{
 .cont-display{
     color: white;
     
+}
+
+.cont-testHeader{
+    background-color: aqua;
+    @extend%flex-row;
+    @extend%Main_Align;
+    justify-content: space-between;
+    border: $container;
 }

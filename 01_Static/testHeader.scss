@@ -1,0 +1,33 @@
+@use './TemplatesStruct' as *;
+.l-section {
+   @extend%flex-row, %Margin_container;
+    flex-shrink: 0;
+    width: 100px;
+    background-color: $bgColor2;
+    
+}
+
+.mid-section {
+    @extend%Main_Align, %flex-row, %Margin_container;
+    background-color: $bgColor3;
+
+    button.search{
+        width: 75px;
+        height: 40px;
+        padding: 5px 10px;
+        .but-search{
+            width: 50%;
+        }
+    }
+    .bar-search1{
+        @extend%flex-row;
+        flex-shrink: 0px;
+        height: 35px;
+        width: 0;
+    }
+}
+.r-section{
+    @extend%flex-row, %Margin_container;
+
+    background-color: $bgColor2;
+}

@@ -40,8 +40,8 @@ $icon-height: 20px;
 }
 .middle-section{
     @extend%flexRow;
-    align-items: center;
-    background-color:$bgColor1;
+    @extend%flexCenter;
+    // background-color:$bgColor1;
     margin: 10px;
     button.search-button{
         .button-logo{
@@ -51,10 +51,11 @@ $icon-height: 20px;
     }
     .bar-search{
         @extend%flexRow;
-        height: 55%;
-        margin-left: 100px;
+        flex-shrink: 0;
         font-size: 20px;
+        height: 55%;
         padding: 0 10px;
+        margin-left:100px;
     }
 
     .voice-icon{
@@ -67,5 +68,6 @@ $icon-height: 20px;
    
 }
 .right-section{
-    background-color:$bgColor2;
+    @extend%flexRow;
+    // background-color:$bgColor2;
 }

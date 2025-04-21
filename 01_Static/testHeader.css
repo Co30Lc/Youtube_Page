@@ -1,0 +1,41 @@
+.l-section, .mid-section, .mid-section .bar-search1, .r-section {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.mid-section {
+  justify-content: center;
+  align-items: center;
+}
+
+.l-section, .mid-section, .r-section {
+  margin: 10px 20px;
+}
+
+.l-section {
+  flex-shrink: 0;
+  width: 100px;
+  background-color: rgb(165, 0, 194);
+}
+
+.mid-section {
+  background-color: rgb(230, 103, 5);
+}
+.mid-section button.search {
+  width: 75px;
+  height: 40px;
+  padding: 5px 10px;
+}
+.mid-section button.search .but-search {
+  width: 50%;
+}
+.mid-section .bar-search1 {
+  flex-shrink: 0px;
+  height: 35px;
+  width: 0;
+}
+
+.r-section {
+  background-color: rgb(165, 0, 194);
+}/*# sourceMappingURL=testHeader.css.map */
