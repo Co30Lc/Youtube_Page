@@ -1,6 +1,57 @@
-.testgrid{
+@use './TemplatesStruct' as *;
+
+a{
+    text-decoration: none;
+}
+.cont-video{
+    box-shadow: 14px 15px 25px  rgb(221, 221, 221);
+    background-color: rgb(250, 250, 250);
+    cursor: pointer;
+}
+.video-thumbnail{
     display: grid;
-    grid-template-columns: 100px 1fr;
-    place-items: center;
-    background-color:blue;
+    grid-template-columns: 1fr;
+    color: white;
+    .thumbnail-img{
+        object-fit: contain;
+        width: 100%;
+    }
+}
+
+.video-infos{
+    display: grid;
+    grid-template-columns: 55px 1fr;
+    vertical-align: top;
+    text-align: start;
+    margin: 10px 5px;
+    p{
+        font-size: 13px;
+        color: rgb(116, 116, 116);
+        margin: 5px 0;
+        font-weight:normal;
+
+    }
+    .profil-user{
+        margin: 0 10px;
+        .user-pic{
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+    .profil-infos{
+        .video-link{
+            margin: 0;
+            font-size: 16px;
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+        }
+        .username{
+            margin-top: 10px;
+        }
+    }
+}
+.videoDiv{
+    background-color: $bgColor1;
 }

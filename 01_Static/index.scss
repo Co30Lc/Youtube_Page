@@ -13,15 +13,36 @@ body{
     position: fixed;
     inset: 0 0 0 0;
     height: 60px;
-    background-color:rgb(247, 247, 247);
+    gap: 0 40px;
+    padding: 0px 20px;
+    background-color:$bgFixed;
     border-bottom: solid .5px rgb(217, 216, 216);
-    box-shadow: 9 9 9px;
+    
 }
 .cont-sidebar{
-    @extend%flex-col;
+    @extend%flex-col, %main-align-center;
+    position: fixed;
+    inset: 60px 0 0 0;
+    width: 95px;
+    background-color:$bgFixed;
 }
 .cont-display{
-    color: white;
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-left: 100px;
+    margin-right: 10px;
+    // background-color:blue;
+}   
+
+@media(max-width: 850px){
+    .cont-display{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(min-width: 1060px){
+    .cont-display{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 

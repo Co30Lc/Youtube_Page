@@ -1,0 +1,25 @@
+.cont-side {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cont-side .side-icon {
+  cursor: pointer;
+  font-size: 11px;
+  text-align: center;
+  height: 74px;
+  padding: 10px;
+}
+.cont-side .side-icon p {
+  margin: 0;
+  margin: -5px 0px;
+  vertical-align: middle;
+}
+.cont-side .side-icon .img-app {
+  height: 25px;
+  padding: 10px;
+}
+.cont-side .side-icon:hover {
+  background-color: rgb(222, 220, 220);
+}/*# sourceMappingURL=sidebar.css.map */

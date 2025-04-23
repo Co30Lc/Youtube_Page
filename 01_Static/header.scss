@@ -2,17 +2,14 @@
 $icon-height: 20px;
 
 .left-section{
-    @extend%flex-row, %margin_cont;
-    flex: 0;
-    flex-shrink: 0;
-    width: 500px;
+    @extend%grid2section, %main-align-center;
     background-color: $bgColor1;
     .ham-icon{
-        width: 25px;
+        width: 30px;
         background-color: $bgColor2;
     }
     .youtube-icon{
-        width: 100px;
+        width: 90px;
         margin: 0 5px
     }
 

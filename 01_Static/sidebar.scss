@@ -1,0 +1,27 @@
+@use './TemplatesStruct' as *;
+$square-icon: 25px;
+
+.cont-side{
+    @extend%flex-col;
+
+    .side-icon{
+        cursor: pointer;
+        font-size: 11px;
+        text-align: center;
+        height: 74px;
+        padding: 10px;
+        p{
+           margin: 0;
+           margin: -5px 0px; 
+           vertical-align: middle;
+        }
+        .img-app{
+            height: $square-icon;
+            padding:10px;
+
+        }
+    }
+    .side-icon:hover{
+        background-color:rgb(222, 220, 220);
+    }
+}

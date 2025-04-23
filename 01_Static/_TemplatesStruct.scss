@@ -3,12 +3,23 @@ $bgColor1 : rgb(0, 174, 218);
 $bgColor2: rgb(217, 0, 255);
 $bgColor3: rgb(230, 103, 5);
 $square-shape: 30px;
+$bgFixed:rgb(247, 247, 247);
 
 %Default{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     padding: 10px;
     margin: 10px;
+    box-sizing:border-box;
+}
+%grid1section{
+    display: grid;
+    grid-template-columns: 100px;  
+}
+%grid2section{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    
 }
 %grid3section{
     display: grid;

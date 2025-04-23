@@ -24,4 +24,6 @@ document.addEventListener('DOMContentLoaded', function (){
         .then(res => res.text())
         .then(html => element.innerHTML = html);
     });
+
+
 })
