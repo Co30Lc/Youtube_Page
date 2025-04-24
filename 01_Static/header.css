@@ -1,15 +1,10 @@
-.left-section {
-  display: grid;
-  grid-template-columns: 100px 100px;
-}
-
-.middle-section, .middle-section .bar-search, .right-section {
+.left-section, .middle-section, .middle-section .search, .middle-section .bar-search, .right-section {
   display: flex;
   flex-direction: row;
   flex: 1;
 }
 
-.left-section, .middle-section {
+.middle-section, .middle-section .search {
   justify-content: center;
   align-items: center;
 }
@@ -23,23 +18,28 @@
   height: 30px;
 }
 
+.left-section .ham-icon, .right-section .icon {
+  cursor: pointer;
+}
+
 .left-section {
-  background-color: rgb(0, 174, 218);
+  flex: none;
+  align-items: center;
+  margin: 0 5px;
 }
 .left-section .ham-icon {
-  width: 30px;
-  background-color: rgb(217, 0, 255);
+  height: 45px;
 }
 .left-section .youtube-icon {
-  width: 90px;
-  margin: 0 5px;
+  height: 25px;
+  margin: 0 25px;
 }
 
 .middle-section {
   padding: 0px 40px;
 }
 .middle-section .bar-search {
-  width: 0;
+  width: 0px;
   height: 35px;
   border-radius: 2px;
   border: solid 0.5px rgb(198, 198, 198);

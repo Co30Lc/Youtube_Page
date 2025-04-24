@@ -1,5 +1,17 @@
 @use './TemplatesStruct' as *;
 
+@media(max-width: 850px){
+    .cont-display{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(min-width: 1060px){
+    .cont-display{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
 body{
     @extend%Default;
     padding: 70px 0px;
@@ -9,7 +21,7 @@ body{
 }
 
 .cont-header {
-    @extend%flex-row, %main-align-center;
+    @extend%flex-row, %align-header;
     position: fixed;
     inset: 0 0 0 0;
     height: 60px;
@@ -35,14 +47,4 @@ body{
     // background-color:blue;
 }   
 
-@media(max-width: 850px){
-    .cont-display{
-        grid-template-columns: 1fr 1fr;
-    }
-}
-@media(min-width: 1060px){
-    .cont-display{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-}
 

@@ -2,25 +2,31 @@
 $icon-height: 20px;
 
 .left-section{
-    @extend%grid2section, %main-align-center;
-    background-color: $bgColor1;
+    @extend %flex-row;
+    flex: none;
+    align-items: center;
+    margin: 0 5px;
+    // background-color: $bgColor1;
     .ham-icon{
-        width: 30px;
-        background-color: $bgColor2;
+        @extend%cursor;
+        height:45px;
     }
     .youtube-icon{
-        width: 90px;
-        margin: 0 5px
+        height: 25px;
+        margin: 0 25px
     }
 
 }
 .middle-section{
     @extend%flex-row, %main-align-center;
-    // $bgColor2;
+    // background-color: $bgColor2;
     padding: 0px 40px;
+    .search{
+        @extend%flex-row, %main-align-center;
+    }
     .bar-search{
         @extend%flex-row;
-        width: 0;
+        width: 0px;
         height: 35px;
         border-radius: 2px;
         border: solid .5px rgb(198, 198, 198);
@@ -47,9 +53,9 @@ $icon-height: 20px;
     flex: none;
     width: 200px;
     margin: 0 20px;
-    //background-color: $bgColor1;
+    // background-color: $bgColor1;
    .icon{
-        @extend%iconDisplay;
+        @extend%iconDisplay,%cursor;
     }
     #profil{
         border-radius: 50%;

@@ -2,7 +2,6 @@
 .l-section {
    @extend%flex-row, %Margin_container;
     flex-shrink: 0;
-    width: 100px;
     background-color: $bgColor2;
     
 }
@@ -27,7 +26,7 @@
     }
 }
 .r-section{
-    @extend%flex-row, %Margin_container;
+    @extend%flex-row;
 
     background-color: $bgColor2;
 }

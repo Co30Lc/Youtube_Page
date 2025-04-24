@@ -18,7 +18,7 @@ body {
   flex: 1;
 }
 
-.cont-header, .cont-sidebar {
+.cont-sidebar {
   justify-content: center;
   align-items: center;
 }
